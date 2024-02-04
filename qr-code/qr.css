@@ -1,0 +1,42 @@
+* {
+     box-sizing: border-box;
+}
+body {
+     background: rgba(213, 225, 239, 1);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+}
+.container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 300px;
+     height: 410px;
+     background: white;
+     padding: 2px;
+     border-radius: 12px;
+}
+.qr-image {
+     height: 250px;
+     width: 250px;
+     overflow: hidden;
+     border-radius: 10px;
+}
+img {
+     height: 250px;
+}
+.explaination {
+     font-size: 0.8rem;
+     color: rgba(183, 187, 194, 1);
+} 
+.explaination, .qr-image, h3 {
+     margin: 6px;
+}
+@media screen and (max-width: 678px) {
+     .container {
+          width: 90%;
+     }
+}
